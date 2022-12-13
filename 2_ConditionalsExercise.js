@@ -293,12 +293,12 @@ function exercise1(num1) {
     // --------------------------------------------
     // Write your code for the exercise below here:
     // --------------------------------------------
-    if (num10 % 3 === 0) {
-        answer10 = "Fizz"; 
+    if (num10 % 15 === 0) {
+        answer10 = "Fizz Buzz"; 
+      } else if (num10 % 3 === 0) {
+        answer10 = "Fizz";
       } else if (num10 % 5 === 0) {
-        answer10 = "Buzz";
-      } else if (num10 % 15 === 0) {
-                answer10 = "Fizz Buzz";
+                answer10 = "Buzz";
       } else {
               answer10 = num10;      
       }
@@ -321,6 +321,13 @@ function exercise1(num1) {
     // I tried it with a switch, which wasn't working so I did an if else statement instead and that worked
     return answer10;
   }
+
+console.log(exercise10(45));
+console.log(exercise10(9));
+console.log(exercise10(25));
+console.log(exercise10(30));
+console.log(exercise10(7));
+console.log(exercise10(15))
   
   // Congrats, you made it to the end! You rock!
   // Did you find this easy or hard? If you used references, which ones helped you?
